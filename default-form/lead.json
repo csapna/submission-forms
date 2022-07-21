@@ -1,0 +1,146 @@
+{
+	"person": {
+		"nameTitle": "Dr",
+		"firstName": "Oliver",
+		"lastName": "Thredson",
+		"company": "Briarcliff Manor",
+		"contactPreference": "Any",
+		"gender": "unspecified",
+    		"nickname": "Oliver",
+		"birthday": "10/31",
+		"ssnSin": "123 456 789"
+		},
+	"emails": [{
+		"email": "othredson@email.com",
+		"type": "Primary",
+		"primary": true
+		}],
+	"phones": [{
+		"phone": "(604) 321-1234",
+		"type":"Work",
+		"primary":true
+		},
+		{
+		"phone": "(778) 321-1234",
+		"type": "Mobile",
+		"primary": false
+		}],
+	"addresses": [{
+		"address": "1234 Main Street",
+		"city": "Vancouver",
+		"state": "BC",
+		"zipCode": "V1V 1V1",
+		"country": "Canada",
+		"type": "Work",
+		"primary": true
+		}],
+	"notes": [{
+		"note": "I have two small dogs and am interested in pet-friendly properties.",
+		"createdBy": {
+			"firstName": "Lana",
+			"lastName": "Winters",
+			"userId": 1234
+			},
+		"_links": {
+			"delete": "/registrants/1234/notes/1234"
+			}
+		}],
+	"sourceType": {
+		"sourceType": "Online Registration"
+		},
+	"secondarySourceType": {
+		"secondarySourceType": "Google Campaign"
+		},
+	"rating": {
+		"rating": "N"
+		},
+	"followUpProcess": {
+		"followUpProcessId": 1234,
+		"followUpProcess": "30-day Follow-up"
+		},
+	"rotationId": 1234,
+	"websiteTracking": {
+		"domainAccountId": "LAS-123456-01",
+		"guid": ""
+		},
+	"sendSalesRepAssignmentNotification": true,
+	"thankYouEmailTemplateId": 1234,
+	"sendOptInEmail": true,
+	"rotationId": 1234,
+	"excludeFromTraffic": false,
+	"registrationDate": "2020-01-31T20:20:40Z",
+  	"externalId": "ABC123",
+	"externalDuplicateIds": ["DEF456"],
+	"automaticallyMerge": true,
+	"_links": {
+		"self": "/registrants/1234",
+		"update": "/registrants/1234"
+	},
+	"assignedSalesReps": [{
+		"userId": 1234,
+		"firstName": "Lana",
+		"lastName": "Winters",
+		"isPrimary": true
+	}],
+	"questions": [{
+		"questionId": 1111,
+		"type": "checkbox",
+		"name": "Property Interest",
+		"path": "/Qualifying Questions",
+		"answers": [{
+			"answerId": 101,
+			"answer": "Crimson Hill"
+			},
+		{
+			"answerId": 102,
+			"answer": "Sleepy Hollow"
+			}]
+		},
+	{
+		"questionId": 2222,
+		"type": "multi_select",
+		"name": "Property Type",
+		"path": "/Qualifying Questions",
+		"answers": [{
+			"answerId": 201,
+			"answer": "Condominium"
+			},
+		{
+			"answerId": 202,
+			"answer": "Townhouse"
+			},
+		{
+			"answerId": 203,
+			"answer": "Duplex/Triplex"
+			}]
+		},
+	{
+		"questionId": 3333,
+		"type": "single_select",
+		"name": "Budget",
+		"path": "/Qualifying Questions",
+		"answers": [{
+			"answerId": 301,
+			"answer": "$400K - $499K"
+			}]
+		},
+	{
+		"questionId": 4444,
+		"type": "single_select",
+		"name": "Area Knowledge",
+		"path": "/Qualifying Questions",
+		"answers": [{
+			"answerId": 401,
+			"answer": "No"
+			}]
+		},
+	{
+		"questionId": 5555,
+		"type": "text",
+		"name": "Additional Inquiries",
+		"path": "Qualifying Questions",
+		"answers":[{
+			"answer": "Do you have any pet-friendly properties?"
+			}]
+		}]
+	}
