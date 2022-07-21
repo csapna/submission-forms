@@ -8,8 +8,8 @@ $apiKey = '1x1x1';
 
 if (empty($clientId) || empty($apiKey)){
 	throw new Exception('Required parameters are not set, please check that
-							your $clientId and $apiKey
-							are configured correctly');
+				your $clientId and $apiKey
+				are configured correctly');
 }
 
 $projects = [];
@@ -17,22 +17,21 @@ $projects = [];
 /* Associating projects to answers
  * 
  * foreach($_REQUEST['Questions'][$questionId] as $index => $answer){
- * 		switch($answer) {
- * 			case $answerId:
- * 				$projects[] = $projectId;
- * 				break;
- * 			case $answerId:
- * 				$projects[] = $projectId;
- * 				break;
- * 			case $answerId:
- * 				$projects[] = $projectId;
- * 				break;
- * 			default:
- * 				break;
- * 		}
+ * 	switch($answer) {
+ * 		case $answerId:
+ * 			$projects[] = $projectId;
+ * 			break;
+ * 		case $answerId:
+ * 			$projects[] = $projectId;
+ * 			break;
+ * 		case $answerId:
+ * 			$projects[] = $projectId;
+ * 			break;
+ * 		default:
+ * 			break;
+ * 	}
  * }
  */
-
 foreach($_REQUEST['Questions'][1111] as $index => $answer){
 	switch($answer) {
 		case 101:
@@ -51,9 +50,9 @@ foreach($_REQUEST['Questions'][1111] as $index => $answer){
 
 $lead = new LassoLead(
 	$_REQUEST['FirstName'],
-    $_REQUEST['LastName'],
-    $projects[0],
-    $clientId
+	$_REQUEST['LastName'],
+	$projects[0],
+	$clientId
 );
 
 /* Projects
