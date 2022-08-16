@@ -26,7 +26,7 @@
 <p>Define a question with radio button or single-select drop-down menu answers in <a href="https://github.com/csapna/submission-forms/blob/main/special-cases/answer-based-rating/signup.html">signup.html</a>.</p>
 <p>Note that Sales Details (Rating, Source Type, Secondary Source Type... etc) can only have one value so multi-answer questions are not recommended.</p>
 <p>Pass the values and assign ratings to the answers in <a href="https://github.com/csapna/submission-forms/blob/main/special-cases/answer-based-rating/signup.php">signup.php</a>.</p>
-<p>This method can also be applied for assigning values for other Sales Details based on answers</p>
+<p>This method can also be applied for assigning values for other Sales Details based on answers.</p>
 
 <h3><a name="answer-utm">Capture UTM Information as Answers</a></h3>
 <p>To capture UTM information from the URL of the form, define hidden input fields for each value in <a href="https://github.com/csapna/submission-forms/blob/main/special-cases/utm-answers/signup.html">signup.html</a>.</p>
