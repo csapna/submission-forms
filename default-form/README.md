@@ -20,7 +20,7 @@
 
 <pre>Authorization: Bearer ***apikey***<br />Content-Type: application/json</pre>
 
-<p>Once the JSON is formatted, submit leads to <code>https://api.lassocrm.com/v1/registrants</code></p>
+<p>Once the JSON is formatted, submit leads to <code>https://api.lassocrm.com/v1/registrants</code>.</p>
 
 <p>The full API reference is available at <a href="https://platform.lassocrm.com/#/api" target="_blank">platform.lassocrm.com/#/api</a>.</p>
 
