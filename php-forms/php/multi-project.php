@@ -7,16 +7,15 @@ $clientId  = '1111';
 $apiKey = '1x1x1';
 
 if (empty($clientId) || empty($_REQUEST['ProjectID']) || empty($apiKey)){
-	throw new Exception('Required parameters are not set, please check that
-							your $clientId, $projectId and $apiKey are
-							configured correctly');
+	throw new Exception('Required parameters are not set, please check that your $clientId,
+				$projectId and $apiKey are configured correctly');
 }
 
 $lead = new LassoLead(
 	$_REQUEST['FirstName'],
-    $_REQUEST['LastName'],
-    $_REQUEST['ProjectID'][0],
-    $clientId
+	$_REQUEST['LastName'],
+	$_REQUEST['ProjectID'][0],
+	$clientId
 );
 
 /* Projects
