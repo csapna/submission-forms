@@ -7,9 +7,8 @@ $clientId  = '1111';
 $apiKey = '1x1x1';
 
 if (empty($clientId) || empty($apiKey)){
-	throw new Exception('Required parameters are not set, please check that
-							your $clientId and $apiKey
-							are configured correctly');
+	throw new Exception('Required parameters are not set, please check that your 
+				$clientId and $apiKey are configured correctly');
 }
 
 $projects = [];
@@ -51,9 +50,9 @@ foreach($_REQUEST['Questions'][1111] as $index => $answer){
 
 $lead = new LassoLead(
 	$_REQUEST['FirstName'],
-    $_REQUEST['LastName'],
-    $projects[0],
-    $clientId
+	$_REQUEST['LastName'],
+	$projects[0],
+	$clientId
 );
 
 /* Projects
