@@ -14,15 +14,15 @@
 					FirstName: "required",
 					LastName: "required",
 					"Emails[Primary]": { required: true, email: true }
-        },
-        messages:{
-          FirstName: "Please enter a first name",
-          LastName: "Please enter a last name",
-          "Emails[Primary]": "Please enter an e-mail address"
-        }
-      });
+				},
+				messages:{
+					FirstName: "Please enter a first name",
+					LastName: "Please enter a last name",
+					"Emails[Primary]": "Please enter an e-mail address"
+				}
+			});
 		});
-  </script>
+	</script>
 </head>
 
 <body>
@@ -30,28 +30,28 @@
 		<form id="lassoSignupForm" method="post" action="http://www.mylasso.com/registrant_signup.php">
 			<input type="hidden" name="ClientID" value="1111" />
 			<input type="hidden" name="ProjectID" value="1001" />
-      <input type="hidden" name="LassoUID" value="1x1x1" />
-      <input type="hidden" name="domainAccountId" value="LAS-123456-01" />
-    	<input type="hidden" name="guid" value="" />
-    	<input type="hidden" name="RegistrationPageIdentifier" value="Online" />
-      <input type="hidden" name="RatingID" value="1234" />
-      <input type="hidden" name="SourceTypeId" value="1234" />
-      <input type="hidden" name="SecondarySourceTypeId" value="1234" />
-      <input type="hidden" name="SignupThankyouLink" value="thank-you.html" />
-      <input type="hidden" name="SignupEmailLink" value="thank-you-email.html" />
-      <input type="hidden" name="SignupEmailSubject" value="Thank you for registering at [@PROJECT_NAME]." />
+			<input type="hidden" name="LassoUID" value="1x1x1" />
+			<input type="hidden" name="domainAccountId" value="LAS-123456-01" />
+			<input type="hidden" name="guid" value="" />
+			<input type="hidden" name="RegistrationPageIdentifier" value="Online" />
+      			<input type="hidden" name="RatingID" value="1234" />
+      			<input type="hidden" name="SourceTypeId" value="1234" />
+      			<input type="hidden" name="SecondarySourceTypeId" value="1234" />
+      			<input type="hidden" name="SignupThankyouLink" value="thank-you.html" />
+      			<input type="hidden" name="SignupEmailLink" value="thank-you-email.html" />
+      			<input type="hidden" name="SignupEmailSubject" value="Thank you for registering at [@PROJECT_NAME]." />
 			
 			<p>Name Title:<br />
 				<select name="NameTitle">
 					<option disabled value="">-- Select --</option>
-          <option value="Mr">Mr</option>
-          <option value="Mrs">Mrs</option>
-          <option value="Mr & Mrs">Mr &amp; Mrs</option>
-          <option value="Ms">Ms</option>
-          <option value="Miss">Miss</option>
-          <option value="Dr" selected>Dr</option>
-        </select>
-      </p>
+          				<option value="Mr">Mr</option>
+          				<option value="Mrs">Mrs</option>
+          				<option value="Mr & Mrs">Mr &amp; Mrs</option>
+          				<option value="Ms">Ms</option>
+          				<option value="Miss">Miss</option>
+          				<option value="Dr" selected>Dr</option>
+        			</select>
+      			</p>
 			<p><label>First Name*:</label><br /><input type="text" name="FirstName" value="" /></p>
 			<p><label>Last Name*:</label><br /><input type="text" name="LastName" value="" /></p>
 			<p><label>Nickname:</label><br /><input type="text" name="NickName" value="" /></p>
@@ -72,14 +72,14 @@
 				<select name="ContactPreference">
 					<option disabled value="">-- Select --</option>
 					<option value="Any">Any</option>
-          <option value="Email">Email</option>
-          <option value="Mail">Mail</option>
-          <option value="No Contact">No Contact</option>
-          <option value="No Email">No Email</option>
-          <option value="Phone">Phone</option>
-          <option value="Text">Text</option>
-        </select>
-      </p>
+          				<option value="Email">Email</option>
+          				<option value="Mail">Mail</option>
+          				<option value="No Contact">No Contact</option>
+          				<option value="No Email">No Email</option>
+          				<option value="Phone">Phone</option>
+          				<option value="Text">Text</option>
+        			</select>
+      			</p>
 			<p>Question One<br />
 				<input type="checkbox" name="Questions[1111][]" value="101" />Answer 1<br />
 				<input type="checkbox" name="Questions[1111][]" value="102" />Answer 2
@@ -107,52 +107,52 @@
 			<p><input name="lassoSaveButton" type="submit" value="SUBMIT" /></p>
 		</form>
 	</td></tr></table>
-
-  <!-- Lasso Website Tracking Script -->
-  <script type="text/javascript">
-    var _ldstJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
-    _ldstJsHost += "app.lassocrm.com";
-    document.write(unescape("%3Cscript src='" + _ldstJsHost + "/analytics.js' type='text/javascript'%3E%3C/script%3E"));
-  </script>
-  <script type="text/javascript">
-    <!--
-    var LassoCRM = LassoCRM || {};
-    (function(ns){ns.tracker = new LassoAnalytics("LAS-123456-01");})
-    (LassoCRM);
-    try {
-      LassoCRM.tracker.setTrackingDomain(_ldstJsHost);
-      LassoCRM.tracker.init();  // initializes the tracker
-      LassoCRM.tracker.track(); // track() records the page visit with the current page title, to record multiple visits call repeatedly.
-    }
-    catch(error) {}
-    -->
-  </script>
-  <script type="text/javascript">
-    (function(i) {
-      var u =navigator.userAgent;
-      var e=/*@cc_on!@*/false;
-      var st = setTimeout;
-      if(/webkit/i.test(u)){
-        st(function(){
-          var dr=document.readyState;
-          if(dr=="loaded"||dr=="complete"){i()}
-          else{st(arguments.callee,10);}},10);
-      }
-      else if((/mozilla/i.test(u)&&!/(compati)/.test(u)) || (/opera/i.test(u))){
-        document.addEventListener("DOMContentLoaded",i,false);
-      }
-      else if(e){
-        (function(){
-          var t=document.createElement("doc:rdy");
-          try {t.doScroll("left"); i();t=null;}
-          catch(e){st(arguments.callee,0);}
-        })();
-      }
-      else{window.onload=i;}
-    })
-    (function() {for(var i = 0; i < document.forms.length; i++) {
-      if(document.forms[i].guid != undefined) {document.forms[i].guid.value = LassoCRM.tracker.readCookie("ut");}
-    }});
-  </script>
+	
+	<!-- Lasso Website Tracking Script -->
+	<script type="text/javascript">
+		var _ldstJsHost = (("https:" == document.location.protocol) ? "https://" : "http://");
+		_ldstJsHost += "app.lassocrm.com";
+		document.write(unescape("%3Cscript src='" + _ldstJsHost + "/analytics.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	<script type="text/javascript">
+		<!--
+		var LassoCRM = LassoCRM || {};
+		(function(ns){ns.tracker = new LassoAnalytics("LAS-123456-01");})
+		(LassoCRM);
+		try {
+			LassoCRM.tracker.setTrackingDomain(_ldstJsHost);
+			LassoCRM.tracker.init();  // initializes the tracker
+			LassoCRM.tracker.track(); // track() records the page visit with the current page title, to record multiple visits call repeatedly.
+		}
+		catch(error) {}
+		-->
+	</script>
+	<script type="text/javascript">
+		(function(i) {
+			var u =navigator.userAgent;
+			var e=/*@cc_on!@*/false;
+			var st = setTimeout;
+			if(/webkit/i.test(u)){
+				st(function(){
+					var dr=document.readyState;
+					if(dr=="loaded"||dr=="complete"){i()}
+					else{st(arguments.callee,10);}},10);
+			}
+			else if((/mozilla/i.test(u)&&!/(compati)/.test(u)) || (/opera/i.test(u))){
+				document.addEventListener("DOMContentLoaded",i,false);
+			}
+			else if(e){
+				(function(){
+					var t=document.createElement("doc:rdy");
+					try {t.doScroll("left"); i();t=null;}
+					catch(e){st(arguments.callee,0);}
+				})();
+			}
+			else{window.onload=i;}
+		})
+		(function() {for(var i = 0; i < document.forms.length; i++) {
+			if(document.forms[i].guid != undefined) {document.forms[i].guid.value = LassoCRM.tracker.readCookie("ut");}
+		}});
+	</script>
 </body>
 </html>
