@@ -1,0 +1,100 @@
+{
+  "clientId":"1111",
+  "projectIds":["1111"],
+  "nameTitle":"Dr",
+  "firstName":"Lasso",
+  "lastName":"Registrant",
+  "company":"ECI | Lasso",
+  "contactPreference":"Any",
+  "emails":[{
+    "email":"registrant@email.com",
+    "type":"Primary",
+    "primary":true
+  }],
+  "phones":[{
+    "phone":"(604) 321-1234",
+    "type":"Work",
+    "primary":true
+  },
+  {
+    "phone":"(778) 321-1234",
+    "type":"Mobile",
+    "primary":false
+  }],
+  "addresses":[{
+    "address":"1234 Main Street",
+    "city":"Vancouver",
+    "province":"BC",
+    "postalCode":"V1V 1V1",
+    "country":"Canada",
+    "type":"Work",
+    "primary":true
+  }],
+  "notes":["This is a note"],
+  "sourceType":"Online",
+  "secondarySourceType":"Campaign",
+  "rating":"N",
+  "ratingId":"1234",
+  "followUpProcess":"30 Day Follow-up",
+  "rotationId":"Online",
+  "domainAccountId":"LAS-123456-01",
+  "guid":"",
+  "sendSalesRepAssignmentNotification":true,
+  "thankYouEmailTemplateId":"1234",
+  "questions":[{
+    "questionId":"1111",
+    "name":"Checkbox Question",
+    "path":"Questions",
+    "answers":[{
+      "id":"101",
+      "text":"Answer 1"
+    },
+    {
+      "id":"102",
+      "text":"Answer 2"
+    }]
+  },
+  {
+    "questionId":"2222",
+    "name":"Multi-select Drop-down Question",
+    "path":"Questions",
+    "answers":[{
+      "id":"201",
+      "text":"Answer 1"
+    },
+    {
+      "id":"202",
+      "text":"Answer 2"
+    },
+    {
+      "id":"203",
+      "text":"Answer 3"
+    }]
+  },
+  {
+    "questionId":"3333",
+    "name":"Single-select Drop-down Question",
+    "path":"Questions",
+    "answers":[{
+      "id":"301",
+      "text":"Answer 1"
+    }]
+  },
+  {
+    "questionId":"4444",
+    "name":"Radio Button Question",
+    "path":"Questions",
+    "answers":[{
+      "id":"401",
+      "text":"Answer 1"
+    }]
+  },
+  {
+    "questionId":"5555",
+    "name":"Manual Input Question",
+    "path":"Questions",
+    "answers":[{
+      "text":"This is an answer."
+    }]
+  }]
+}
