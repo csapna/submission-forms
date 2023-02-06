@@ -11,7 +11,7 @@
 <p>If you're using the <b>Lasso UID</b>, you must use the syntax in <a href="https://github.com/csapna/submission-forms/blob/main/legacy-forms/lead.json" target="_blank">lead.json</a> to submit. You can use our <a href="http://app.lassocrm.com/registrant_signup/help" target="_blank">Legacy Form Generator</a> to generate the code.</p>
 <p>In your <code>POST</code> request, you will need to include a custom header:</p>
 <pre>X-Lasso-Auth: Token={apiKey},Version=1.0</pre>
-<p>Once the JSON is formatted, submit leads to <code>https://api.lassocrm.com/registrants</code>.</p>
+<p>Once the JSON is formatted, submit leads to <code>https://api.lassocrm.com/registrants</code></p>
 
 <h3><a name="response-codes">Response Codes</a></h3>
 <table>
