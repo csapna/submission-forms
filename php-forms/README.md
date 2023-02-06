@@ -33,7 +33,7 @@
 <p>To capture UTM information from the URL of the form, define hidden input fields for each value in <a href="https://github.com/csapna/submission-forms/blob/main/php-forms/utm-answers.html">utm-answers.html</a>.</p>
 <p>A manual input question for each UTM field must exist in Lasso and then each field is to be mapped in <a href="https://github.com/csapna/submission-forms/blob/main/php-forms/php/utm-answers.php">utm-answers.php</a>.</p>
 
-<h4><a name="troubleshooting">Registrant is not in Lasso?</a></h3>
+<h3><a name="troubleshooting">Registrant is not in Lasso?</a></h3>
 <p>If the submission did not go into Lasso, look at the error console in your browser. More information about the request can be found by uncommenting the lines at the bottom of <a href="https://github.com/csapna/submission-forms/blob/main/php-forms/php/single-project.php" target="_blank">single-project.php</a> (under <i>Troubleshooting examples</i>) and re-trying the submission.</p>
 
 <h3><a name="response-codes">Response Codes</a></h3>
